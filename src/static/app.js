@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ? participants
                 .map(
                   (participant) => `
-                    <li class="participant-item">
+                    <li class="participant-info">
                       <span>${participant}</span>
                       <button
                         type="button"
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   `
                 )
                 .join("")
-            : "<li class=\"participant-item empty\">No participants yet.</li>";
+            : "<li class=\"participant-info empty\">No participants yet.</li>";
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
